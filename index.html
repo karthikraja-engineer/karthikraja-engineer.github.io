@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karthik Raja - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #f5f7fa;
+      --text-color: #333;
+      --primary-color: #2d3e50;
+    }
+    body.dark-mode {
+      --bg-color: #1e1e1e;
+      --text-color: #f0f0f0;
+      --primary-color: #66aaff;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      transition: background-color 0.4s, color 0.4s;
+    }
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-style: italic;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem 1rem;
+      animation: slideIn 1s ease-in-out;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .contact div {
+      flex: 1 1 200px;
+    }
+    .toggle-mode {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--primary-color);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary-color);
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-mode" onclick="toggleMode()">🌙 Toggle Mode</button>
+
+<header>
+  <h1>Karthik Raja</h1>
+  <p>Hardware Engineer | Embedded Systems | Innovator</p>
+</header>
+
+<div class="container">
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <div>Email: karthik@example.com</div>
+      <div>LinkedIn: linkedin.com/in/karthikraja</div>
+      <div>GitHub: github.com/karthikraja-engineer</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Profile Summary</h2>
+    <p>Innovative and results-driven hardware engineer with 8+ years of experience in embedded systems, circuit design, and product development across automotive and industrial domains.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Embedded C, PCB Design, Schematic Tools</li>
+      <li>Hardware Validation, Power Electronics</li>
+      <li>Project Management, Vendor Collaboration</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <p><strong>Senior Hardware Engineer</strong> – Bosch India (2021–Present)</p>
+    <ul>
+      <li>Led hardware development for automotive ECUs</li>
+      <li>Collaborated with EMS vendors for production readiness</li>
+    </ul>
+
+    <p><strong>Hardware Design Engineer</strong> – Industrial Solutions (2017–2021)</p>
+    <ul>
+      <li>Delivered custom embedded solutions from concept to deployment</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects & Portfolio</h2>
+    <ul>
+      <li><strong>PDF Sync Tool:</strong> VBA-based tool to sync Excel with PDF viewer for validation tracing.</li>
+      <li><strong>Power Net Flow Visualizer:</strong> Graph-based tool to trace power paths and analyze circuits faster.</li>
+      <li><strong>LayoutGlide:</strong> Automatic schematic ↔ layout guideline synchronizer for hardware compliance.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <p>B.E. in Electrical and Electronics Engineering – Hindusthan College, Coimbatore</p>
+  </section>
+</div>
+
+<footer>
+  © 2025 Karthik Raja. All rights reserved.
+</footer>
+
+<script>
+  function toggleMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
