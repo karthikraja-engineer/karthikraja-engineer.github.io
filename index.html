@@ -1,178 +1,2023 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Karthik Raja - Resume</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #f5f7fa;
-      --text-color: #333;
-      --primary-color: #2d3e50;
-    }
-    body.dark-mode {
-      --bg-color: #1e1e1e;
-      --text-color: #f0f0f0;
-      --primary-color: #66aaff;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: var(--text-color);
-      background-color: var(--bg-color);
-      transition: background-color 0.4s, color 0.4s;
-    }
-    header {
-      background: var(--primary-color);
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-      animation: fadeIn 1s ease-in-out;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-style: italic;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem 1rem;
-      animation: slideIn 1s ease-in-out;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      color: var(--primary-color);
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .contact div {
-      flex: 1 1 200px;
-    }
-    .toggle-mode {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: var(--primary-color);
-      color: #fff;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: var(--primary-color);
-      color: #fff;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideIn {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Style Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Style
+  * Template URL: https://bootstrapmade.com/style-bootstrap-portfolio-template/
+  * Updated: Jul 02 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
 
-<button class="toggle-mode" onclick="toggleMode()">🌙 Toggle Mode</button>
+<body class="index-page">
 
-<header>
-  <h1>Karthik Raja</h1>
-  <p>Hardware Engineer | Embedded Systems | Innovator</p>
-</header>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-<div class="container">
-  <section>
-    <h2>Contact</h2>
-    <div class="contact">
-      <div>Email: karthik@example.com</div>
-      <div>LinkedIn: linkedin.com/in/karthikraja</div>
-      <div>GitHub: github.com/karthikraja-engineer</div>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <!-- Uncomment the line below if you also wish to use an text logo -->
+        <!-- <h1 class="sitename">Style</h1>  -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+
+        <div class="profile-img">
+          <img src="assets/img/profile/profile-square-1.webp" alt="" class="img-fluid rounded-circle">
+        </div>
+
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center active">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">Karthikraja V</h1>
+        </a>
+
+        <div class="social-links text-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
     </div>
-  </section>
+  </header>
 
-  <section>
-    <h2>Profile Summary</h2>
-    <p>Innovative and results-driven hardware engineer with 8+ years of experience in embedded systems, circuit design, and product development across automotive and industrial domains.</p>
-  </section>
+  <main class="main">
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Embedded C, PCB Design, Schematic Tools</li>
-      <li>Hardware Validation, Power Electronics</li>
-      <li>Project Management, Vendor Collaboration</li>
-    </ul>
-  </section>
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
 
-  <section>
-    <h2>Experience</h2>
-    <p><strong>Senior Hardware Engineer</strong> – Bosch India (2021–Present)</p>
-    <ul>
-      <li>Led hardware development for automotive ECUs</li>
-      <li>Collaborated with EMS vendors for production readiness</li>
-    </ul>
+      <div class="container">
+        <div class="row g-0 align-items-center">
 
-    <p><strong>Hardware Design Engineer</strong> – Industrial Solutions (2017–2021)</p>
-    <ul>
-      <li>Delivered custom embedded solutions from concept to deployment</li>
-    </ul>
-  </section>
+          <div class="col-lg-6 hero-content" data-aos="fade-right" data-aos-delay="100">
+            <div class="content-wrapper">
+              <h1 class="hero-title"> Engineering  <span class="typed" data-typed-items="Innovation, Integration, Automation, Impact"></span></h1>
+              <p class="lead">Hi, I'm Karthik Raja — a systems-driven Embedded Hardware Engineer and evolving Program Leader with a track record of building intelligent electronics and automated workflows that scale.</p>
 
-  <section>
-    <h2>Projects & Portfolio</h2>
-    <ul>
-      <li><strong>PDF Sync Tool:</strong> VBA-based tool to sync Excel with PDF viewer for validation tracing.</li>
-      <li><strong>Power Net Flow Visualizer:</strong> Graph-based tool to trace power paths and analyze circuits faster.</li>
-      <li><strong>LayoutGlide:</strong> Automatic schematic ↔ layout guideline synchronizer for hardware compliance.</li>
-    </ul>
-  </section>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Layer HDI PCB Designed </span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2">0</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="purecounter" data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="2">0</span>
+                  <span class="stat-label"> Pages system schematic handled</span>
+                </div>
+              </div>
 
-  <section>
-    <h2>Education</h2>
-    <p>B.E. in Electrical and Electronics Engineering – Hindusthan College, Coimbatore</p>
-  </section>
-</div>
+              <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+              </div>
 
-<footer>
-  © 2025 Karthik Raja. All rights reserved.
-</footer>
+              <div class="social-links" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://www.linkedin.com/in/karthikraja-venkatachalam-8212a216b/"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-github"></i></a>
+              </div>
+            </div>
+          </div>
 
-<script>
-  function toggleMode() {
-    document.body.classList.toggle('dark-mode');
-  }
-</script>
+          <div class="col-lg-6 hero-image" data-aos="fade-left" data-aos-delay="150">
+            <div class="image-container">
+			
+              <div class="floating-elements">
+                <div class="floating-card card-1" data-aos="zoom-in" data-aos-delay="200">
+                  <i class="bi bi-palette"></i>
+                  <span>Design Enthusiast</span>
+                </div>
+                <div class="floating-card card-2" data-aos="zoom-in" data-aos-delay="300">
+                  <i class="bi bi-code-slash"></i>
+                  <span>Digital Toolsmith</span>
+                </div>
+                <div class="floating-card card-3" data-aos="zoom-in" data-aos-delay="400">
+                  <i class="bi bi-lightning"></i>
+                  <span>Workflow Innovator </span>
+                </div>
+				<div class="floating-card card-4" data-aos="zoom-in" data-aos-delay="500">
+                  <i class="bi bi-lightning"></i>
+                  <span>Scroll for more </span>
+                </div>
+              </div>
+			  
+              <img src="assets/img/profile/profile-square-1.webp" alt="Portfolio Hero" class="img-fluid hero-main-image">
+              <div class="image-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>About Me</h2>
+        <p>Engineering beyond boundaries - integrating hardware, intelligence, and execution at scale</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="profile-image-wrapper">
+              <div class="profile-image">
+                <img src="assets/img/profile/profile-square-1.webp" alt="Profile" class="img-fluid">
+              </div>
+              <div class="signature-section">
+                <img src="assets/img/misc/signature-1.webp" alt="Signature" class="signature">
+                <p class="quote">Electronics Engineer & Project Manager 🧠⚙️ | Hardware & PCB Design Enthusiast 🛠️ | Digital Toolsmith | Workflow Innovator 🚀 | Turning Tech Ideas into Reality ✨.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <div class="intro">
+                <h2>Hi, I'm Karthik Raja — a Divergent Hardware Architect & Systems Integrator</h2>
+					<p>With a decade of experience in embedded product development, I specialize in building intelligent electronics and streamlining engineering workflows. 
+					From leading high-complexity ECU designs to crafting tools that save weeks of effort, I combine deep technical skill with execution clarity. 
+					Currently leading automotive hardware programs and integration activities at Bosch.</p>
+              </div>
+
+              <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="skill-icon">
+                    <i class="bi bi-palette"></i>
+                  </div>
+                  <h4>Embedded Hardware</h4>
+                  <p>ECU, ATE, and HDI design ownership. Delivered 52-layer boards and 300+ page schematics with system-wide traceability</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="skill-icon">
+                    <i class="bi bi-code-slash"></i>
+                  </div>
+                  <h4>Project Execution</h4>
+                  <p>Owned BOM, timelines, vendor coordination, and cross-domain reviews for global product launches.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="skill-icon">
+                    <i class="bi bi-camera"></i>
+                  </div>
+                  <h4>Engineering Tools</h4>
+                  <p>Built Python-based PDF-BOM sync, PPM calculators, and visual netlist explorers used across teams.</p>
+                </div>
+              </div>
+
+
+
+      <!-- Section Title 
+              <div class="journey-timeline" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-item">
+                  <div class="year"> 2016 - Now- |</div>
+                  <div class="description"> ~10 Years Working in electronics industry as a solution provider </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2013 - 2016 |   </div>
+                  <div class="description">Accomplished Bachelor of Engineering in Electrical & Electronics Enginnering</div>
+                </div>
+                <div class="timeline-item">
+                  <div class="year">2012 - 2011 | </div>
+                  <div class="description"> Worked as Mainteneace engineer in apollotyres </div>
+                </div>
+				<div class="timeline-item">
+                  <div class="year">2011 - 2012 | </div>
+                  <div class="description"> Worked as Planning engineer in L&T </div>
+                </div>
+				<div class="timeline-item">
+                  <div class="year">2008 - 2011 | </div>
+                  <div class="description"> Accomplished Diploma in Electrical & Electronics Enginnering </div>
+                </div>
+              </div>
+			-->  
+			  
+
+              <div class="cta-section" data-aos="fade-up" data-aos-delay="400">
+                <div class="fun-fact">
+                  <span class="emoji">☕</span>
+				  <span class="text">
+					I am the Divergent Force leading critical projects; I automate the repetitive and visualize the unclear. This approach is my operating system for delivering high-efficiency solutions and zeroing out bottlenecks.
+				  </span>
+                </div>
+                <div class="action-buttons">
+                  <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                  <a href="#" class="btn btn-outline">Download Resume</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="skills-grid">
+              <div class="row g-4">
+			  
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="200">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-cpu"></i>
+                      <h3>Hardware</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">HW Arch</span>
+                          <span class="skill-percentage">95%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Footprint</span>
+                          <span class="skill-percentage">88%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">PCB Layout</span>
+                          <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					   <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">SI/PI Debug</span>
+                          <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  	<div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Thermal Test</span>
+                          <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					   <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Debug Fixes</span>
+                          <span class="skill-percentage">82%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+                    </div>
+                  </div><!-- End Frontend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="300">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-currency-dollar"></i>
+                      <h3>BOM & Cost</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">BOM Structuring</span>
+                          <span class="skill-percentage">78%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Supplier Mgmt</span>
+                          <span class="skill-percentage">75%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Variant Control</span>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  
+					                        <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Cost Insights</span>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					                        <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Alt Sourcing</span>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					                        <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Risk Handle</span>
+                          <span class="skill-percentage">72%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+                    </div>
+                  </div><!-- End Backend Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="400">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-terminal-split"></i>
+                      <h3>Tools & Automation</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Altium </span>
+                          <span class="skill-percentage">85%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">VBA/Python </span>
+                          <span class="skill-percentage">70%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Report Sync</span>
+                          <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">BOM Script</span>
+                          <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  					  <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Auto Docs</span>
+                          <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  					  <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Power BI</span>
+                          <span class="skill-percentage">68%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  
+                    </div>
+                  </div><!-- End Design Card -->
+                </div>
+
+                <div class="col-md-6" data-aos="flip-left" data-aos-delay="500">
+                  <div class="skill-card">
+                    <div class="skill-header">
+                      <i class="bi bi-kanban"></i>
+                      <h3>Program Delivery</h3>
+                    </div>
+                    <div class="skills-animation">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Stakeholder Sync</span>
+                          <span class="skill-percentage">76%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Quality Gates</span>
+                          <span class="skill-percentage">73%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Dashboards </span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Change Ctrl</span>
+                          <span class="skill-percentage">73%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Risk Plan</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Variant Exec</span>
+                          <span class="skill-percentage">90%</span>
+                        </div>
+                        <div class="skill-bar progress">
+                          <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+					  
+					  
+                    </div>
+                  </div><!-- End DevOps Card -->
+                </div>
+              </div>
+            </div><!-- End Skills Grid -->
+          </div>
+
+          <div class="col-lg-4">
+            <div class="skills-summary" data-aos="fade-left" data-aos-delay="200">
+              <h3>Professional Expertise</h3>
+              <p>Driving large-scale hardware programs with a blend of technical precision, cost optimization, and process automation. Expertise in delivering complex embedded systems with an aggressive focus on design accuracy, operational efficiency, and cross-functional program governance.</p>
+
+              <div class="summary-stats">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="stat-circle">
+                    <i class="bi bi-trophy"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years of Experience</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="stat-circle">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Complex Programs Executed</span>
+                  </div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="stat-circle">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="stat-info">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Product Launches</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skills-badges" data-aos="fade-up" data-aos-delay="600">
+                <h4>Tags</h4>
+                <div class="badge-list">
+                  <div class="skill-badge">HW Architect	</div>
+                  <div class="skill-badge">Automation Lead</div>
+                  <div class="skill-badge">Program Head	</div>
+                  <div class="skill-badge">Sourcing Ace</div>
+				  <div class="skill-badge">Quality Champion</div>
+                  <div class="skill-badge">Growth Driver</div>
+                </div>
+              </div>
+            </div><!-- End Skills Summary -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Resume</h2>
+        <p>Passionate Hardware Professional with 10+ years of experience in Embedded Systems, Project Management, and Engineering Process Automation.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+		  <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200"> 
+            <div class="education-section">
+              <div class="section-header">
+                <h2><i class="bi bi-mortarboard"></i> Academic Excellence</h2>
+                <p class="section-subtitle">Demonstrated academic excellence with a strong foundation in electrical and electronics engineering. Consistently applied theoretical knowledge to practical assignments, enhancing problem-solving abilities and technical acumen through hands-on industry experience.</p>
+              </div>
+
+              <div class="education-timeline">
+                <div class="timeline-track"></div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="300">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Diploma in Electrical & Enlectronics Engineering</h3>
+                      <span class="year">2008 - 2011</span>
+                    </div>
+                    <h4 class="institution">(GPTC) Government Polytechnic college - Coimbatore - DOTE </h4>
+                    <p>Completed a comprehensive diploma program focusing on electrical circuits, power systems, and industrial electronics. Developed strong fundamentals in technical drawing, wiring practices, and maintenance protocols.</p>
+                  </div>
+                </div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="400">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3> Worked as Planning Engineer</h3>
+                      <span class="year">2011 - 2012</span>
+                    </div>
+                    <h4 class="institution"> L & T Power Transmission and Distribution </h4>
+                    <p>Selected through campus placement and contributed as a Planning Engineer for the MRPL Power Transmission and Distribution Project. Gained practical exposure in project scheduling, resource planning, and execution coordination.</p>
+                  </div>
+                </div>
+
+                <div class="education-item" data-aos="slide-up" data-aos-delay="500">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Worked as Maintenance Engineer</h3>
+                      <span class="year">2012 - 2013</span>
+                    </div>
+                    <h4 class="institution">apollo tyres - Manufacturing plant </h4>
+                    <p>Worked as a Maintenance Engineer responsible for ensuring the operational efficiency of production line machinery. Involved in preventive maintenance schedules, troubleshooting electrical faults, and supporting production continuity.</p>
+                  </div>
+                </div>
+				
+				<div class="education-item" data-aos="slide-up" data-aos-delay="500">
+                  <div class="timeline-marker"></div>
+                  <div class="education-content">
+                    <div class="degree-header">
+                      <h3>Bachelor of Engineering in EEE </h3>
+                      <span class="year">2013 - 2016</span>
+                    </div>
+                    <h4 class="institution"> HICET - Anna University </h4>
+                    <p>Graduated with a Bachelor's degree specializing in Electrical and Electronics Engineering. Focused on embedded systems, power electronics, and control systems, with active involvement in lab projects and technical workshops.</p>
+                  </div>
+                </div>
+				
+				
+              </div>
+            </div>
+          </div>
+		
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="experience-section">
+              <div class="section-header">
+                <h2><i class="bi bi-briefcase"></i> Professional Journey</h2>
+                <p class="section-subtitle">Proven experience in hardware design, project management, and cross-functional leadership, driving end-to-end product development across diverse industries. Expertise in PCB design, BOM optimization, and engineering process automation with a consistent focus on efficiency and quality.</p>
+              </div>
+
+              <div class="experience-cards">
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Hardware Project Manager & Integrator</h3>
+                      <h4>Bosch Global Software Technologies Pvt Ltd</h4>
+                    </div>
+                    <span class="duration">2023 - Present</span>
+                  </div>
+                  <div class="card-body">
+                    <p>---</p>
+                    <ul class="achievements">
+                      <li>Leading hardware project management activities for automotive ECU development.</li>
+                      <li>Responsible for BOM optimization, quality gate management, and hardware project kick-off.</li>
+                      <li>Spearheaded process automation tools, reducing manual effort by 95%.+</li>
+					  <li>Recognized as Growth Driver Award Winner for impactful project contributions.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Senior Hardware Lead</h3>
+                      <h4>McWane India Pvt Ltd</h4>
+                    </div>
+                    <span class="duration">2020 - 2023</span>
+                  </div>
+                  <div class="card-body">
+						<p>---</p>
+					<ul class="achievements">
+                      <li>Managed requirements, schematic reviews, and EMS vendor coordination.</li>
+                      <li>Developed BOM Optimization and Validation Automation tools to streamline processes.</li>
+                      <li>Successfully delivered industrial automation and automotive safety product lines.</li>
+					  <li>Single point of contact for hardware validation and customer reporting.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Hardware & PCB Design Engineer</h3>
+                      <h4>Sierra Circuits Pvt Ltd</h4>
+                    </div>
+                    <span class="duration">2019 - 2020</span>
+                  </div>
+                  <div class="card-body">
+						<p>---</p>
+					<ul class="achievements">
+                      <li>Handled library management, circuit design, PCB layout, and gerber release.</li>
+                      <li>Specialized in rapid prototyping with Altium and trained team members on tool usage.</li>
+                      <li>Fastest prototype builder within the team, contributing to OEM product development.</li>
+                    </ul>
+                  </div>
+                </div>
+				
+				  <div class="experience-card" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="card-header">
+                    <div class="role-info">
+                      <h3>Hardware Design Engineer</h3>
+                      <h4>Tessolve Semiconductors Pvt Ltd</h4>
+                    </div>
+                    <span class="duration">2016 - 2019</span>
+                  </div>
+                  <div class="card-body">
+						<p>---</p>
+					<ul class="achievements">
+                      <li>Responsible for component selection, footprint creation, and schematic design.</li>
+                      <li>Executed multiple projects involving HDI PCB boards and test board developments.</li>
+                      <li>Developed automation scripts for design tools, enhancing team productivity.</li>
+                    </ul>
+                  </div>
+                </div>
+				
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+   <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Hardware Product Expertise</h2>
+        <p>Driving innovation from architecture to production with precision engineering and supply chain excellence.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-stack"></i>
+              </div>
+              <h3>Digital Hardware Design</h3>
+              <p>Specializing in schematic design, PCB layout, and high-speed signal integrity for complex electronics products.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  View Capabilities
+                  <i class="bi bi-diagram-3"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3>System Security & Compliance</h3>
+              <p>Ensuring product-level hardware cybersecurity, EMI/EMC compliance, and adherence to global safety standards.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  View Capabilities
+                  <i class="bi bi-tools"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3>Scalable Product Platforms</h3>
+              <p>Developing modular architectures and hardware platforms optimized for cost, performance, and future scalability.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                 View Capabilities
+                  <i class="bi bi-bar-chart-line"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-cpu"></i>
+              </div>
+              <h3>Embedded Intelligence Integration</h3>
+              <p>Seamlessly integrating microcontrollers, processors, and AI accelerators to enable smart product functionalities.</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  View Capabilities
+                  <i class="bi bi-lightbulb"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-cloud-arrow-up"></i>
+              </div>
+              <h3>Cloud-Connected Devices</h3>
+              <p>"Designing IoT-enabled hardware with reliable cloud interfacing for data acquisition, remote monitoring, and analytics."</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  View Capabilities
+                  <i class="bi bi-person-check"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <!-- Card 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="icon">
+                <i class="bi bi-gear"></i>
+              </div>
+              <h3>Process & Workflow Automation</h3>
+              <p>Building automated validation setups, test jigs, and report frameworks for efficient hardware development cycles..</p>
+              <div class="card-links">
+                <a href="#" class="link-item">
+                  View Capabilities
+                  <i class="bi bi-layout-text-sidebar"></i>
+                </a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Competency Portfolio</h2>
+        <p> Leveraging 10+ years of progressive expertise, I drive the technical vision for complex hardware to production, ensuring predictable delivery and maximizing ROI.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">
+              <i class="bi bi-grid-3x3"></i> All
+            </li>
+            <li data-filter=".filter-Plan">Plan</li>
+            <li data-filter=".filter-Design">Design</li>
+            <li data-filter=".filter-Develop">Develop</li>
+            <li data-filter=".filter-Test">Test</li>
+			<li data-filter=".filter-Deploy">Deploy</li>
+			<li data-filter=".filter-Launch">Launch</li>
+			<li data-filter=".filter-Divergent">Divergent</li>
+          </ul>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/1-req.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay"> 
+                     <div class="overlay-content">
+                      <div class="entry-meta">Requirements</div>
+                      <h3 class="entry-title">System-Level Requirement Breakdown</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/1-req.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: System-Level Requirement Breakdown; description: Translated stakeholder and OEM-level expectations into subsystem-level hardware, software, and mechanical specs with traceability.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div> 
+					  </div>
+                </div> 
+                  
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/2-align.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Alignment</div>
+                      <h3 class="entry-title">Cross-Domain Requirement Convergence</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/2-align.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Cross-Domain Requirement Convergence; description: Facilitated alignment of electrical, thermal, mechanical, and software requirements through system architecture sessions.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/3-risk.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Risk</div>
+                      <h3 class="entry-title">Early Risk Identification & Mitigation</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/3-risk.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Early Risk Identification & Mitigation; description: Proactively identified technical and sourcing risks during planning and created mitigation plans with cross-functional buy-in.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/4-cost.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Costing</div>
+                      <h3 class="entry-title">Volume Estimation & Cost Modeling</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/4-cost.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Volume Estimation & Cost Modeling; description: Estimated production volume forecast and aligned component selections and design direction to unit cost goals and scaling strategy.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/5-select.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Selection</div>
+                      <h3 class="entry-title">Strategic Component Pre-Selection</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/5-select.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Strategic Component Pre-Selection; description: Shortlisted key ICs and connectors aligned with platform reuse, life cycle availability, and pre-sourced supplier agreements.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/6-feas.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Feasibility</div>
+                      <h3 class="entry-title">Technical Feasibility Assessment	</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/6-feas.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Technical Feasibility Assessment	; description: Performed early simulations, thermal envelope calculations, and PCB stack feasibility studies to validate concept viability.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/7-resource.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Resourcing</div>
+                      <h3 class="entry-title">Multi-Site Resource Planning	</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/7-resource.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Multi-Site Resource Planning	; description: Created execution plans considering design, validation, and manufacturing resources across in-house and EMS partners.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/8-Schedule.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Scheduling</div>
+                      <h3 class="entry-title">Customer Milestone Backward Planning	</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/8-Schedule.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Customer Milestone Backward Planning	; description: Mapped customer delivery milestones backward to internal gates and release timelines using Gantt and agile overlay.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/9-governance.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Governance</div>
+                      <h3 class="entry-title">Engineering Change Process Definition	</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/9-governance.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Engineering Change Process Definition	; description: Defined hardware change control workflows, versioning protocols, and approval mechanisms for pre-release activities.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Plan">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/10-baseline.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Baseline</div>
+                      <h3 class="entry-title">Stakeholder Buy-in & Baseline Freeze	</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/10-baseline.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Stakeholder Buy-in & Baseline Freeze	; description: Organized technical review boards and secured stakeholder approval to freeze scope, BOM strategy, and design direction.">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/HW_Architecture.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">HW Architecture</div>
+                      <h3 class="entry-title">System Architecture Definition & Function blocks design</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/HW_Architecture.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+             <div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/CompLibrary.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Component Library</div>
+                      <h3 class="entry-title"> Footprint and Symbol creation & Library Maintenance</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/CompLibrary.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+			
+			
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/SchematicCapture.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Schematic Capture</div>
+                      <h3 class="entry-title"> Schematic Design & Ownership</h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/SchematicCapture.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/LayoutDesign.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Layout Design</div>
+                      <h3 class="entry-title">  DRC, DFM , DFA, DFT  </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/LayoutDesign.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Simulation.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Simulation </div>
+                      <h3 class="entry-title"> Pre-Layout SI/PI Modeling & Risk Mitigation </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Simulation.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/CrossDomainReview.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Design Review | CX Domain </div>
+                      <h3 class="entry-title"> Formal Cross-Functional Design Review Sign-off </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/CrossDomainReview.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Design">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Document.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Documentation </div>
+                      <h3 class="entry-title"> Manufacturing Release Package Ownership (Gerbers/BOMs) </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Document.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+			
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Develop">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Prototype.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Build Management </div>
+                      <h3 class="entry-title"> Prototype Build Coordination & Timeline Execution </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Prototype.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Develop">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/DFM.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> DFM/DFA </div>
+                      <h3 class="entry-title"> Manufacturing Feedback & Design Optimization Loop </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/DFM.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Develop">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Debug.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Debug </div>
+                      <h3 class="entry-title"> First-Pass Power-Up & System-Level Diagnostics </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Debug.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+			
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Develop">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Process.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Process </div>
+                      <h3 class="entry-title"> Assembly Workflow Optimization & Automation </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Process.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Develop">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Inventory.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Inventory </div>
+                      <h3 class="entry-title"> Prototype Component Traceability & Allocation </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Inventory.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Verification.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Verification </div>
+                      <h3 class="entry-title"> Requirements Traceability Verification </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Verification.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Testplan.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Test Plan </div>
+                      <h3 class="entry-title"> System-Level Validation Matrix Definition & Ownership </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Testplan.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Compliance_1.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Compliance </div>
+                      <h3 class="entry-title"> EMI/EMC & Safety (UL/CE) Pre-Compliance Testing </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Compliance_1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Reliability_1.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Reliability </div>
+                      <h3 class="entry-title"> Life accelerator , Environmental Stress Functional Testing </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Reliability_1.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Performance.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Performance </div>
+                      <h3 class="entry-title"> Critical Performance Benchmarking & Optimization </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Performance.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Test">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Report.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Report </div>
+                      <h3 class="entry-title"> Test Result,  Defect Tracking & Root Cause Analysis (RCA) </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Report.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/MfStrategy.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Mfg Strategy </div>
+                      <h3 class="entry-title"> Global Manufacturing Site Selection & Co-ordination </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/MfStrategy.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Logistics.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Logistics </div>
+                      <h3 class="entry-title"> Finalized Component Procurement & Logistics Chain </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Logistics.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/SAP.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Integration </div>
+                      <h3 class="entry-title"> ERP/SAP Data Integration & Release for Production </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/SAP.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/tooling.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Tooling </div>
+                      <h3 class="entry-title"> Production Fixture & Test Jig Development Oversight </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/tooling.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/AOI.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Pilot Run </div>
+                      <h3 class="entry-title"> First Article Inspection (FAI) & Production Readiness </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/AOI.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Deploy">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/QualityGate.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Quality Gate </div>
+                      <h3 class="entry-title"> Manufacturing Quality Acceptance & Hand-off </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/QualityGate.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Launch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/SOP.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Certification &  SOP </div>
+                      <h3 class="entry-title"> Final Regulatory Compliance & Start of production </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/SOP.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Launch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/ServiceDoc.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Service </div>
+                      <h3 class="entry-title"> Field Service & Post-Launch Support Documentation </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/ServiceDoc.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Launch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/EOL.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> End-of-Life </div>
+                      <h3 class="entry-title"> Product Obsolescence Planning & Strategy </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/EOL.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Launch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Review.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Review </div>
+                      <h3 class="entry-title"> Post-Mortem Project Review & Lessons Learned </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Review.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Launch">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Close.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Close-out </div>
+                      <h3 class="entry-title"> Technical & Financial Project Close-out and Reporting </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Close.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/3DModel.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> 3D Modeling </div>
+                      <h3 class="entry-title"> Enclosure Design & Rapid final prototyping. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/3DModel.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/MechTherm.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Mechanical & Thermal </div>
+                      <h3 class="entry-title"> Optimize hardware reliability via thermal-mechanical analysis. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/MechTherm.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Grpahic.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Graphic Design </div>
+                      <h3 class="entry-title"> Craft intuitive UIs, manuals, portfolios.. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Grpahic.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/ESP32.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> C (Arduino/ESP32) </div>
+                      <h3 class="entry-title"> Leveraging C with Arduino/ESP32 for Test Jigs/POC Development. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/ESP32.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Vb.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> VB Script </div>
+                      <h3 class="entry-title"> VB scripts automate PADS-Excel process optimization. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Vb.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/python.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta">Python </div>
+                      <h3 class="entry-title">Python tools automate design verification and Doc sync. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/python.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+			<div class="col-xl-2 col-lg-4 col-md-6 portfolio-item isotope-item filter-Divergent">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/portfolio/Reasoning.webp" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-meta"> Reasoning Skill </div>
+                      <h3 class="entry-title"> Thoughts behind innovative processes and products. </h3>
+                      <div class="entry-links">
+                        <a href="assets/img/portfolio/Reasoning.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: tit; description: des">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+                       <!--  <a href="portfolio-details.html"> <i class="bi bi-arrow-right"></i> </a> -->
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->			
+
+
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section --> 
+
+
+    <!-- Testimonials Section  -->
+   
+    <!-- Faq Section -->
+	
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contact</h2>
+        <p>Connecting Visions to Reality.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p> Decoding Possibilities. Connect with the Minds That Shape the Future. </p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Mail Location</h4>
+				  <p>Karthiaja V</p>
+                  <p>26, J J Nagar, Gurusamy Nagar </p>
+				  <p>Bharathiyar University post</p>
+				  <p>Coimbatore, TN - 641046</p>
+				  <p>India</p>
+				  <p>*-*</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+91 96 00 95 1232</p>
+                  <p>*-*</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>karthiknova709@gmail.com</p>
+                  <p>*-*</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p> A Powerful Partnership Starts with a Hello.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn"> Sent email / call to the info given in contact section </button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Karthikraja V</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/karthikraja-venkatachalam-8212a216b/"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">Karthikraja V</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
