@@ -1831,7 +1831,7 @@ section,
 }
 
 .portfolio .portfolio-filters li:hover i {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 .portfolio .portfolio-filters li.filter-active {
