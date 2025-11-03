@@ -1985,7 +1985,7 @@ section,
 --------------------------------------------------------------*/
 
 .portfolio .portfolio-item .entry-image {
-  aspect-ratio: 2/2;
+  aspect-ratio: 4/2;
 }
 
 @media (min-width: 1200px) {
